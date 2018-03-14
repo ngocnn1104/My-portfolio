@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css?family=Alegreya+Sans:400,900');
+
+* {
+  font-family: 'Alegreya Sans', sans-serif;
+  color: rgba(27,11,55,1);
+}
+
+.cover {
+  background: url("../img/background.jpg");
+  background-position: center;
+  width: 100%;
+  position: relative;
+  padding-top: 2em;
+  height: 700px;
+}
+
+h1 {
+  color: white;
+  margin-top: 25%;
+  font-weight: 900;
+  font-size: 3em;
+}
+
+.cover button {
+  margin-top: 15%;
+  background: none;
+  color: white;
+  border: white solid 0.1em;
+  font-size: 1.5em;
+}
+
+.cover button:hover {
+  background: white;
+  color: none;
+  transform: scale(1.5);
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  font-size: 1.5em;
+  background: rgba(27,11,55,1);
+  height: 2.5em;
+}
+
+.nav-item {
+  height: 2.5em;
+  color: white;
+  padding: 0.5em 1em;
+}
+
+.nav-item:hover {
+  background: white;
+  cursor: pointer;
+  color: rgba(27,11,55,1);
+}
+
+#about p {
+  font-size: 1.5em;
+}
+
+.title h2{
+  margin-bottom: 1.5em;
+  font-weight: 900;
+}
+
+#resume {
+  background: rgba(27,11,55,0.1);
+}
+
+.leftBorder {
+  border-left: dotted thin rgba(27,11,55,1);
+}
+
+.rightBorder {
+  border-right: dotted thin rgba(27,11,55,1);
+}
+
+.subtitle {
+  margin-bottom: 2.5em;
+  font-size: 1.2em;
+}
+
+.setPaddingTop {
+  padding-top: 3.5em;
+  padding-bottom: 3.5em;
+}
+
+.skills img {
+  height: 100px;
+}
+
+.thumbnail img {
+  opacity: 0.3;
+}
+
+.thumbnail:hover img {
+  opacity: 1;
+}
+
+.skills img {
+  margin-bottom: 4em;
+}
+
+.caption {
+  font-size: 1.5em;
+}
+
+#contact {
+  background: rgba(27,11,55,1);
+}
+
+#contact h2, footer {
+  color: white;
+}
+
+footer {
+  font-size: 1.2em;
+}
+
+#contact i {
+  color: white;
+  margin: 0 0.02em 1.5em 1em;
+}
+
+#contact i:hover {
+  transform: scale(1.5);
+}
+
+.projects-img img {
+  margin: 10px 0;
+  width: 450px;
+}
+
+
+@media screen and (max-width: 992px) {
+  #about img {
+    display: block;
+    margin: 0 auto;
+  }
+
+  #about p {
+    padding: 20px 20px;
+  }
+}
+
+@media screen and (max-width:768px) {
+  nav {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .projects-img img {
+    width: 100%;
+  }
+
+  .skills img {
+    height: 50px;
+  }
+}
